@@ -57,6 +57,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'ro-crate-web'
-          slot-name: 'Production'
-          package: .
+          package: ./dist/ro-crate-web
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6A76ED7B0BD34055A99D1426F2BDD382 }}
