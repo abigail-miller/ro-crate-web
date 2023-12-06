@@ -26,6 +26,7 @@ import { CarouselModule } from 'primeng/carousel';
 import { MenubarModule } from 'primeng/menubar';
 import { PanelModule } from 'primeng/panel';
 import { PanelMenuModule } from 'primeng/panelmenu';
+import { TabMenuModule } from 'primeng/tabmenu';
 import { TabViewModule } from 'primeng/tabview';
 import { TableModule } from 'primeng/table';
 import { TagModule } from 'primeng/tag';
@@ -62,6 +63,7 @@ import { FooterComponent } from './footer/footer.component';
     MenubarModule,    
     PanelModule,
     PanelMenuModule,
+    TabMenuModule,
     TabViewModule,
     TableModule,
     TagModule,

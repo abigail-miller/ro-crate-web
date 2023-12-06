@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { faFlask } from '@fortawesome/free-solid-svg-icons';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
@@ -10,7 +10,8 @@ import * as roleData from '../service/roles.json';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],  
+  encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
   faFlask = faFlask;
@@ -24,12 +25,12 @@ export class HomeComponent implements OnInit {
 
   responsiveOptions: any[]  = [
     {
-        breakpoint: '1199px',
-        numVisible: 1,
+        breakpoint: '1350px',
+        numVisible: 3,
         numScroll: 1
     },
     {
-        breakpoint: '991px',
+        breakpoint: '1050px',
         numVisible: 2,
         numScroll: 1
     },

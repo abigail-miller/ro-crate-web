@@ -1,20 +1,52 @@
+@import '../../assets/palette.scss';
+
 .section-header {
-  color: #046e5a;
+  color: $primary-teal;
   text-align: center;
   font-size: 2em;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
+  font-weight: bold;
   padding-top: 30px;
+  position: relative; 
 }
 
 .section-content {
   padding: 0 100px 50px 100px;
 }
 
+.heading {
+  background: rgb(243,243,243);
+  h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+  }
+}
+
 
 .featured-content {
-  background-color: #F6F6F6 !important;
+  position: relative;  
+  border-top: 1px solid $primary-teal;
+  border-bottom: 1px solid $primary-teal;
 }
+
+.featured-content::before {    
+  content: "";
+  background-image: url('../../assets/images/bg22.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
+
 
 .featured-content h3 a {
   font-size: 1.2em;
@@ -47,4 +79,67 @@
 
 .tag-link {
   color: white !important;
+}
+
+.stacked-tag {
+  .p-tag {
+    margin-top: 10px;
+    background-color: $primary-teal;
+  }
+}
+
+.carousel-container {  
+  border: 1px solid $primary-teal;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  background-color: white;
+}
+
+.carousel-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 50%;
+}
+
+.carousel-image {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.carousel-content-container {
+  flex: 1;
+  max-height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-carousel-content .p-carousel-prev,.p-carousel-next {
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+  background-color: white;
+}
+
+.p-carousel-prev, .p-carousel-next {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    .p-icon {
+      width: 2.5rem !important;
+      height: 2.5rem !important;
+  }
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+  background-color: $primary-teal;
 }
