@@ -1,0 +1,38 @@
+[
+  {
+    "Name": "Biomedical Science",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Icon": "fa-flask-vial",
+    "Background": "Biomedical Science background"
+  },
+  {
+    "Name": "Chemistry",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Icon": "fa-flask",
+    "Background": "Chemistry background"
+  },
+  {
+    "Name": "Informatics",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Icon": "fa-lightbulb",
+    "Background": "Informatics background"
+  },
+  {
+    "Name": "Medicine",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Icon": "fa-stethoscope",
+    "Background": "Medicine background"
+  },
+  {
+    "Name": "Omics",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Icon": "fa-dna",
+    "Background": "Omics background"
+  },
+  {
+    "Name": "Language and Text Analytics",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Icon": "fa-book",
+    "Background": "Language and Text Analytics background"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "Name": "Sofware Developer",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Icon": "fa-code",
+    "Background": "Sofware Developer background"
+  },
+  {
+    "Name": "Data Analyst",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Icon": "fa-chart-column",
+    "Background": "Data Analyst background"
+  },
+  {
+    "Name": "Researcher",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Icon": "fa-microscope",
+    "Background": "Researcher background"
+  },
+  {
+    "Name": "Compliance Officer",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Icon": "fa-list-check",
+    "Background": "Compliance Officer background"
+  },
+  {
+    "Name": "Data Steward",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Icon": "fa-file-shield",
+    "Background": "Data Steward background"
+  },
+  {
+    "Name": "Managerial",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Icon": "fa-paperclip",
+    "Background": "Managerial background"
+  }
+]

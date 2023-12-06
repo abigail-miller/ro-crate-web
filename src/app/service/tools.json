@@ -1,0 +1,66 @@
+[
+  {
+    "Name": "Decribo",
+    "Description": "an ecosystem of tools, software components and services to create and manage Research Object Crates.",
+    "Status": "RC",
+    "Level": "All",
+    "URL": "https://describo.github.io/#/",
+    "Tags": "['Biomedical Science', 'Chemistry',  'Informatics', 'Data Handling', 'Manging Research Data, 'Data Curation']"
+  },
+  {
+    "Name": "ro-crate-excel ",
+    "Description": "Command-line tool to help create RO-Crates from spreadsheets",
+    "Status": "beta",
+    "Level": "Beginner",
+    "URL": "https://www.npmjs.com/package/ro-crate-excel",
+    "Tags": "['Medicine', 'Omics', 'Data Handling', 'Manging Research Data', 'Data Steward]"
+  },
+  {
+    "Name": "ro-crate-html",
+    "Description": "HTML rendering of RO-Crate",
+    "Status": "beta",
+    "Level": "Intermediate",
+    "URL": "https://www.npmjs.com/package/ro-crate-html",
+    "Tags": "['Software Development', 'Sofware Developer']"
+  },
+  {
+    "Name": "ro-crate-preview",
+    "Description": "GitHub Action for ro-crate-html, e.g. publishing crates on GitHub Pages",
+    "Status": "alpha",
+    "Level": "Advanced",
+    "URL": "https://github.com/marketplace/actions/ro-crate-preview",
+    "Tags": "['Biomedical Science', 'Chemistry',  'Informatics', 'Data Handling', 'Manging Research Data, 'Data Curation']"
+  },
+  {
+    "Name": "ro-crate-js",
+    "Description": "JavaScript/NodeJS library for RO-Crate rendering as HTML",
+    "Status": "beta",
+    "Level": "Advanced",
+    "URL": "https://www.npmjs.com/package/ro-crate",
+    "Tags": "['Software Development', 'Sofware Developer']"
+  },
+  {
+    "Name": "ro-crate-ruby",
+    "Description": "Ruby library to consume/produce RO-Crates",
+    "Status": "beta",
+    "Level": "Advanced",
+    "URL": "https://github.com/ResearchObject/ro-crate-ruby",
+    "Tags": "['Software Development', 'Sofware Developer']"
+  },
+  {
+    "Name": "FAIR-Research-Object",
+    "Description": "evaluate FAIRness of Research Objects through an API",
+    "Status": "prototype",
+    "Level": "Intermediate",
+    "URL": "https://github.com/oeg-upm/FAIR-Research-Object",
+    "Tags": "['Informatics', 'Language and Text Analytics','Compliance','Data Curation']"
+  },
+  {
+    "Name": "RO-Crate-Registry",
+    "Description": "Web-based registry of RO-Crates (assumes ZIP on http/https)",
+    "Status": "prototype",
+    "Level": "Beginner",
+    "URL": "https://github.com/XiaotianWang0918/RO-Crate-Registry",
+    "Tags": "['Compliance', 'Manging Research Data', 'Compliance Officer','Managerial']"
+  }
+]

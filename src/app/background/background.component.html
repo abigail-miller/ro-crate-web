@@ -1,0 +1,260 @@
+<div style="padding-left:200px;padding-right:200px;padding-top:30px">
+
+  <h2>Research Object Background</h2>
+  <hr/>
+
+  <h3 class="no_toc text-delta" id="table-of-contents">
+    <a
+      href="#table-of-contents"
+      class="anchor-heading"
+      aria-labelledby="table-of-contents"
+      
+    ></a>
+    Table of contents
+  </h3>
+  <ol id="markdown-toc">
+    <li>
+      <a
+        href="#other-research-object-formats"
+        id="markdown-toc-other-research-object-formats"
+        >Other Research Object formats</a
+      >
+    </li>
+    <li>
+      <a href="#making-ro-crate" id="markdown-toc-making-ro-crate"
+        >Making RO Crate</a
+      >
+    </li>
+  </ol>
+  <p>
+    A <a href="../index.html">Research Object</a> (<em>RO</em>) provide
+    a machine-readable mechanism to communicate the diverse set of
+    digital and real-world resources that contribute to an item of
+    research. The aim of an RO is to replace traditional academic
+    publication as a PDF with a couple of supplementary materials; to
+    instead provide a structured archive of all the items that
+    contributed to the research outcome, including their identifiers,
+    provenance, relations and annotations.
+  </p>
+  <p>
+    This is of particular importance as all domains of research and
+    science are increasingly relying in computational analysis, yet we
+    are facing a
+    <a href="https://doi.org/10.1038/533452a">reproducibility crisis</a>
+    because key components are not sufficiently tracked, archived or
+    reported.
+  </p>
+  <p>Examples of items that should be included in a Research Object:</p>
+  <ul>
+    <li>Manuscripts and preprints</li>
+    <li>Lab notebooks</li>
+    <li>Data (raw and processed)</li>
+    <li>Computational workflows and scripts</li>
+    <li>Results (graphs, derived data)</li>
+    <li>Slides</li>
+    <li>Metadata</li>
+    <li>Computational logs</li>
+  </ul>
+  <h2 id="other-research-object-formats">
+    <a
+      href="#other-research-object-formats"
+      class="anchor-heading"
+      aria-labelledby="other-research-object-formats"
+      ></a>
+    Other Research Object formats
+  </h2>
+  <p>
+    The Research Object initiative have iteratively been developing
+    <a href="../specs/index.html">specifications</a> for
+    machine-readable formats of communicating Research Objects. The
+    formalization of Research Object is a combination of existing
+    <a href="https://en.wikipedia.org/wiki/Linked_data">Linked Data</a>
+    standards:
+  </p>
+  <ul>
+    <li>
+      <a href="https://www.w3.org/TR/rdf11-primer/">W3C RDF</a>,
+      primarily as <a href="https://json-ld.org/">JSON-LD</a>
+    </li>
+    <li>
+      <a href="http://www.openarchives.org/ore/1.0/primer">OAI-ORE</a>
+      for aggregating resources
+    </li>
+    <li>
+      <a href="https://www.w3.org/TR/annotation-model/"
+        >W3C Web Annotation Data Model</a
+      >
+      for linking and relating to describing resources and the RO.
+    </li>
+    <li>
+      <a href="https://www.w3.org/TR/prov-overview/">W3C PROV</a> and
+      <a href="http://purl.org/pav/html">PAV</a> to provide provenance,
+      authorship and attributions for resources, the RO and the
+      annotations.
+    </li>
+    <li>
+      <a href="http://dublincore.org/documents/dcmi-terms/"
+        >Dublin Core Terms</a
+      >
+      for common metadata (title, descriptor, format)
+    </li>
+    <li>
+      <a href="https://orcid.org/">ORCID</a> for identifying people
+    </li>
+  </ul>
+  <p>
+    The
+    <a href="https://w3id.org/ro/2016-01-28/"
+      >Research Object ontologies</a
+    >
+    were created to combine the above and add a few missing pieces
+    making the combined vocabulary for describing ROs, but to do not
+    themselves formalize how the Research Object is saved or
+    transmitted.
+  </p>
+  <p>
+    The existing RO formats have been used for portal systems like
+    <a href="http://www.rohub.org/">RO Hub</a> using RDF as the common
+    serialization across REST resources; or for generation of
+    <a href="https://w3id.org/bundle/">RO bundle</a> ZIP files and
+    <a href="https://w3id.org/ro/bagit">BagIt archives</a> by workflow
+    systems like
+    <a
+      href="https://github.com/apache/incubator-taverna-engine/blob/master/taverna-prov/README.md"
+      >Apache Taverna</a
+    >
+    and
+    <a href="https://w3id.org/cwl/prov/">Common Workflow Language</a>.
+  </p>
+  <p>
+    In all of these instansiations the RO consists of an outer
+    <em>manifest</em> that lists:
+  </p>
+  <ul>
+    <li><strong>Identify</strong> of the Research Object</li>
+    <li>List of <strong>aggregated</strong> resources</li>
+    <li>
+      List of <strong>annotations</strong> that further describe
+      resources
+    </li>
+    <li>
+      Basic <strong>provenance</strong> and typing of the RO and its
+      resources
+    </li>
+  </ul>
+  <p>
+    The Research Object manifest is saved in a resource called
+    <code class="language-plaintext highlighter-rouge"
+      >.ro/manifest.rdf</code
+    >
+    (REST),
+    <code class="language-plaintext highlighter-rouge"
+      >.ro/manifest.json</code
+    >
+    (Bundle) or
+    <code class="language-plaintext highlighter-rouge"
+      >metadata/manifest.json</code
+    >
+    (Bagit) depending on the serialization.
+  </p>
+  <p>
+    As a separation of concern, anything more detailed was delegated to
+    separate annotation files linked from the manifest, allowing them
+    their own provenance, format, vocabularies and scope. The role of
+    the manifest in this scenario was thus to provide the
+    <em>glue</em> between the resources, saying which annotations
+    describe which resources, using which format.
+  </p>
+  <p>
+    For instance, a workflow engine like
+    <a href="https://taverna.incubator.apache.org/">Apache Taverna</a>
+    can include its native workflow definition file as an aggregated
+    resource, and generate a simplified
+    <a href="https://w3id.org/ro/2016-01-28/wfdesc">wfdesc</a>
+    annotation file that show the structure of the workflow; the
+    provenance would show that the annotation file was generated by the
+    software (thus flagged for updating of the workflow was changed).
+    Similarly the <a href="http://www.rohub.org/">RO Hub</a> allow
+    collaborative description of individual resources - saving these as
+    separate annotation resources mean the Research Object also keeps
+    track of <em>who</em> described <em>what</em> resource
+    <em>when</em>.
+  </p>
+  <h2 id="making-ro-crate">
+    <a
+      href="#making-ro-crate"
+      class="anchor-heading"
+      aria-labelledby="making-ro-crate"
+      ></a>
+    Making RO Crate
+  </h2>
+  <p>
+    The composition model above is facilitating machine-generated ROs
+    with rich provenance tracking and extraction of metadata from
+    existing formats.
+  </p>
+  <p>
+    However work on
+    <a
+      href="https://github.com/fair-research/bdbag/blob/master/doc/config.md#ro-metadata"
+      >BDBag Research Objects</a
+    >
+    highlighted that this separation approach becomes overly complicated
+    for human-edited Research Objects and advocated embedding the
+    annotation content inside the manifest JSON.
+  </p>
+  <p>
+    Recent advances like
+    <a href="https://schema.org/">schema.org</a> and
+    <a href="http://bioschemas.org/">BioSchemas</a> have simplified
+    vocabularies for common metadata descriptions and made
+    <a href="https://json-ld.org/">JSON-LD</a> mainstream, negating some
+    reasons for separating such annotations to separate files.
+  </p>
+  <p>
+    The freedom of separate annotations mean that consumers of ROs would
+    not know what to expect inside their content - increasing the
+    importance of formalizing
+    <a href="../scopes/index.html">Research Object profiles</a>.
+    Previous work such as carefully crafted
+    <a href="../initiative/mim/index.html"
+      >Minimum Information Models</a
+    >
+    and more recent work on
+    <a href="https://github.com/ResearchObject/ro-curate">RDF Shapes</a>
+    provide RO validation that takes into account annotations, but what
+    remains is how to communicating to developers and end-users how to
+    programmatically generate ROs consistent for a particular profile.
+  </p>
+  <p>
+    The recent
+    <a href="https://github.com/UTS-eResearch/datacrate">DataCrate</a>
+    approach
+    <a
+      href="https://github.com/UTS-eResearch/datacrate#rdf-based-formats"
+      >points out</a
+    >
+    that the existing RO manifest forces too much structure for simpler
+    use-cases of general <em>who-what-where</em> type metadata, and
+    advocates a
+    <a
+      href="https://github.com/UTS-eResearch/datacrate/blob/master/spec/1.0/data_crate_specification_v1.0.md"
+      >simpler approach</a
+    >
+    based primarily on <a href="https://schema.org/">schema.org</a> in a
+    JSON-LD
+    <code class="language-plaintext highlighter-rouge"
+      >CATALOG.json</code
+    >, but also mandating a human-readable HTML
+    <code class="language-plaintext highlighter-rouge"
+      >CATALOG.html</code
+    >.
+  </p>
+  <p>
+    Starting as a <a href="community-2.html">community</a> project from
+    the beginning, the
+    <a href="specification.html">RO-Crate specification</a> evolved from
+    <em>DataCrate</em> to add Research Object aspects and further
+    formalize the recommendations.
+  </p>
+</div>

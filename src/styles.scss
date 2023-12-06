@@ -1,0 +1,85 @@
+@import "node_modules/primeflex/primeflex.css";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+body {
+	font-family: "Source Sans 3", sans-serif;
+	font-size:14px;
+	font-weight:300;
+	line-height:1.6em;
+  background-color: white;
+  height: 100%;
+}
+
+
+h1,h2, h3, h4, h5, h6 {
+	font-weight:700;
+	color:#333;
+	margin-bottom: 20px;
+  text-decoration: none;
+}
+
+h2, .h2 {
+  font-size: 30px;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+}
+
+.p-menubar .p-menuitem-link {
+  text-decoration: none !important;
+}
+
+.p-breadcrumb ul li .p-menuitem-link .p-menuitem-icon {
+  color: #37907F !important;
+}
+
+.p-breadcrumb ul li .p-menuitem-link .p-menuitem-text {
+  color: #37907F !important;
+}
+
+.p-breadcrumb ul li.p-breadcrumb-chevron {
+  color: #37907F !important;
+}
+
+.title {
+  color: #37907F;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+.category-header a {
+  color: #555;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0px !important;
+  padding: 0px !important;
+  text-decoration: none !important;
+  font-weight: 700;
+}
+
+.p-menubar.p-component {
+  background-color: white;
+  border: none;
+}
+
+.icon-info-blocks {
+  float: left;
+  color: #777;
+  font-size: 30px;
+  min-width: 50px;
+  margin-top: 10px;
+  text-align: center;
+}

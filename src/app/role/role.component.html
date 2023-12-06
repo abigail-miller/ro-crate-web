@@ -1,0 +1,20 @@
+<p-breadcrumb class="max-w-full" [model]="items || []" [home]="home || {}"></p-breadcrumb>
+<div class="grid">
+  <div class="col-2"><app-sidenav></app-sidenav></div>
+  <div class="col-10">
+    <div style="padding-top: 40px">
+      <h2>Your Role</h2>
+      <hr />
+    </div>
+    <div class="grid" style="padding-right:200px;padding-top:20px">
+      <div *ngFor="let role of roles" class="col-4 flex align-items-center mb-4">
+        <div>
+          <i class="fa-solid fa fa-3x mr-3 icon-info-blocks {{ role.Icon }}"></i>
+        </div>
+        <div class="category-header">
+          <a [routerLink]="['/role-details']" [queryParams]="{ category: role.Name }">{{ role.Name }}</a><br/>
+          {{role.Description }}
+        </div>
+    </div>
+    <div style="margin-bottom:200px;"></div>
+</div>
