@@ -1,11 +1,13 @@
 @import "node_modules/primeflex/primeflex.css";
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+@import 'assets/palette.scss';
 
 html, body, app-root {
   height: 100%;
   padding: 0;
   margin: 0;
 }
+
 body {
 	font-family: "Source Sans 3", sans-serif;
 	font-size:14px;
@@ -14,30 +16,30 @@ body {
   background-color: white;
 }
 
-
 h1,h2, h3, h4, h5, h6 {
 	font-weight:700;
-	color:#4A5251;
-	margin-bottom: 20px;
+	color: $secondary-brown;
+	margin-bottom: 10px;
   text-decoration: none;
 }
 
-h2, .h2 {
+h2{
   font-size: 30px;
 }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid $primary-brown;
 }
 
 a:hover {
   text-decoration: underline;
 }
+
 a {
   text-decoration: none;
+  color: $secondary-brown;
+  font-family: "Source Sans 3", sans-serif;
 }
 
 .p-menubar .p-menuitem-link {
@@ -86,4 +88,25 @@ a {
   min-width: 50px;
   margin-top: 10px;
   text-align: center;
+}
+
+.p-breadcrumb ul li.p-breadcrumb-chevron {
+  padding-top: 7px !important;
+}
+
+.p-breadcrumb {
+  padding: 5px 20px 5px !important;
+  border-radius: 0 !important;
+}
+
+.p-panel .p-panel-content {
+  color: $secondary-brown !important;
+}
+.p-datatable .p-datatable-thead > tr > th {
+  color: $secondary-brown !important;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.grid {
+  margin: 0 !important;
 }

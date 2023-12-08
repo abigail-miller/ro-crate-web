@@ -2,10 +2,10 @@
 <div class="grid">
   <div class="col-2"><app-sidenav></app-sidenav></div>
   <div class="col-10">
-    <div style="padding-top:30px">
-
-      <h2>{{ useCase }}</h2>
-      <hr />
+    <div class="pt-3 pr-5">
+      <h2>{{ useCase.Name }}</h2>
+      <hr class="mb-3"/>
+      <markdown src="../../assets/use-cases/{{ useCase.Source }}"></markdown>
     </div>
   </div>
 </div>

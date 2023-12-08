@@ -1,14 +1,30 @@
 <div class="sidenav">
+  <div class="sidenav-header">Explore RO Crate</div>
   <p-accordion>
     <p-accordionTab header="Your Domain">
+      <div *ngFor="let domain of domains">
+        <a [routerLink]="['/domain-details']" [queryParams]="{ category: domain.Name }">{{ domain.Name }}</a><hr/>
+      </div>      
     </p-accordionTab>
     <p-accordionTab header="Your Task">
+      <div *ngFor="let task of tasks">
+        <a [routerLink]="['/task-details']" [queryParams]="{ category: task.Name }">{{ task.Name }}</a><hr/>
+      </div>
     </p-accordionTab>
     <p-accordionTab header="Your Role">
+      <div *ngFor="let role of roles">
+        <a [routerLink]="['/role-details']" [queryParams]="{ category: role.Name }">{{ role.Name }}</a><hr/>
+      </div>
     </p-accordionTab>
     <p-accordionTab header="All Tools">
+      <div *ngFor="let tool of tools">
+        {{ tool.Name }}<hr/>
+      </div>
     </p-accordionTab>
     <p-accordionTab header="All Training">
+      <div *ngFor="let tutorial of tutorials">
+        {{ tutorial.Name }}<hr/>
+      </div>
     </p-accordionTab>
   </p-accordion>
 </div>

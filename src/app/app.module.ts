@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
+import { SecurityContext } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BackgroundComponent } from './background/background.component';
@@ -20,6 +22,7 @@ import { UseCaseComponent } from './use-case/use-case.component';
 import { UseCaseDetailsComponent } from './use-case-details/use-case-details.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MarkdownModule } from 'ngx-markdown';
 
 import { AccordionModule } from 'primeng/accordion';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
@@ -55,6 +58,7 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent,
   ],
   imports: [
+    HttpClientModule,
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
@@ -73,6 +77,11 @@ import { FooterComponent } from './footer/footer.component';
     TabViewModule,
     TableModule,
     TagModule,
+    MarkdownModule.forRoot({
+      sanitize: SecurityContext.NONE,
+      loader: HttpClient 
+    }),
+    MarkdownModule.forChild()
   ],
   providers: [],
   bootstrap: [AppComponent]

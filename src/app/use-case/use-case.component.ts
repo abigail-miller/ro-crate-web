@@ -10,13 +10,15 @@ export class UseCaseComponent implements OnInit {
   items: MenuItem[] | undefined;
   home: MenuItem | undefined;
   roles = (useCasesData as any).default;
-
+  markdownContent ='';
+  htmlContent = '';
   ngOnInit() {
     this.items = [
       { label: 'Home', routerLink: '/'}, 
       { label: 'Use Cases'}
     ];
     this.home = { icon: 'pi pi-home', routerLink: '/' };
+    this.markdownContent = ''
   }
 
 }

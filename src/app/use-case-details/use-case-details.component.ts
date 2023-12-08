@@ -11,15 +11,15 @@ import { MenuItem } from 'primeng/api';
 export class UseCaseDetailsComponent implements OnInit {
   items: MenuItem[] | undefined;
   home: MenuItem | undefined;
-  useCase = '';
-  useCaseDetails: any;
+  useCaseName = '';
+  useCase: any;
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router) {
     this.activatedRoute.queryParamMap.subscribe((params) => {
-      this.useCase = params.get('useCase') || '';
+      this.useCaseName = params.get('useCase') || '';
     });
     const useCases = (useCaseData as any).default;
-    this.useCaseDetails = useCases.find((item: { Name: string; }) => item.Name === this.useCase);
+    this.useCase = useCases.find((item: { Name: string; }) => item.Name === this.useCaseName);
   }
 
   ngOnInit() {
