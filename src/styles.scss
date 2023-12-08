@@ -46,20 +46,26 @@ a {
   text-decoration: none !important;
 }
 
+.p-menubar .p-menubar-button:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem $primary-teal !important;
+}
+
 .p-breadcrumb ul li .p-menuitem-link .p-menuitem-icon {
-  color: #37907F !important;
+  color: $primary-teal !important;
 }
 
 .p-breadcrumb ul li .p-menuitem-link .p-menuitem-text {
-  color: #37907F !important;
+  color: $primary-teal !important;
 }
 
 .p-breadcrumb ul li.p-breadcrumb-chevron {
-  color: #37907F !important;
+  color: $primary-teal !important;
 }
 
 .title {
-  color: #37907F;
+  color: $primary-teal;
   font-size: 18px;
   font-weight: 700;
   margin-top:20px;
@@ -67,7 +73,7 @@ a {
 }
 
 .category-header a {
-  color: #555;
+  color: $primary-gray;
   font-size: 20px;
   line-height: 28px;
   margin: 0px !important;
