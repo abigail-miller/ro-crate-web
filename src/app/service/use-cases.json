@@ -1,13 +1,13 @@
 [
   {
     "Name": "Life Monitor",
-    "Description": "Life Monitor is a testing and monitoring service for computational workflows being developed as part of the EOSC-Life project. It aims to facilitate the execution, monitoring and sharing of workflow tests over time, allowing to detect deviations from expected workflow operation and provide useful feedback to the workflow authors for maintaining and improving their work. Life Monitor uses RO-Crate as an exchange format for the description of test suites associated with workflows. To this end, the Life Monitor team is developing an extension to the Workflow RO-Crate specification to support the inclusion of metadata related to the testing of computational workflows stored in the crate.",
+    "Description": "Life Monitor is a testing and monitoring service for computational workflows being developed as part of the EOSC-Life project. It aims to facilitate the execution, monitoring and sharing of workflow tests over time, allowing to detect deviations from expected workflow operation and provide useful feedback to the workflow authors for maintaining and improving their work.",
     "URL": "https://www.researchobject.org/ro-crate/in-use/life_monitor",
     "Image": "life_monitor.png",
     "Tags": ["Biomedical Science", "Medicine", "Conduct Research"]  },
   {
     "Name": "Workflow Execution Service (WfExS)",
-    "Description": "WfExS-backend is a high-level workflow execution command line program that consumes and creates RO-Crates, focusing on the interconnection of content-sensitive research infrastructures for handling sensitive human data analysis scenarios. WfExS-backend delegates workflow execution of existing workflow engines, and it is designed to facilitate more secure and reproducible workflow executions to promote analysis reproducibility and replicability. Secure executions are achieved using FUSE encrypted directories for non-disclosable inputs, intermediate workflow execution results and output files.RO-Crates are, indeed, an element of knowledge transfer between repeated workflow executions. WfExS-backend stores all the gathered details, output metadata and execution provenance in the output RO-Crate to achieve future reproducible executions. Final execution results can be encrypted with crypt4gh GA4GH standard using the public keys of the target researchers or destination, so the results can be safely moved outside the execution environments through unsecured networks and storages.",
+    "Description": "WfExS-backend is a high-level workflow execution command line program that consumes and creates RO-Crates, focusing on the interconnection of content-sensitive research infrastructures for handling sensitive human data analysis scenarios.",
     "URL": "https://github.com/inab/WfExS-backend",
     "Image": "wfexs.svg",
     "Tags": ["Informatics", "Software Development",  "Sofware Developer", "Data Analyst"]  },
@@ -15,7 +15,7 @@
     "Name": "Arkisto",
     "Description": "Arkisto uses RO-Crate for packaging data objects in the 3 uses cases described below, Modern PARADISEC, UTS Research Data Repository and UTS Cultural Datasets. As part of these use-cases they have been developing or enhancing their tooling to facilitate their use of RO-Crate",
     "URL": "https://arkisto-platform.github.io/standards/ro-crate/",
-    "Image": "arkisto.svg",
+    "Image": "arkisto.png",
     "Tags": ["Language and Text Analytics", "Data Curation", "Data Steward"]  },
   {
     "Name": "WorkflowHub",

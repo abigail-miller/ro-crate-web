@@ -11,6 +11,8 @@ import { BackgroundComponent } from './background/background.component';
 import { CommunityComponent } from './community/community.component';
 import { SpecificationComponent } from './specification/specification.component';
 import { ContactComponent } from './contact/contact.component';
+import { UseCaseComponent } from './use-case/use-case.component';
+import { UseCaseDetailsComponent } from './use-case-details/use-case-details.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -24,7 +26,9 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent},
   { path: 'domain-details', component: DomainDetailsComponent},
   { path: 'role-details', component: RoleDetailsComponent},
-  { path: 'task-details', component: TaskDetailsComponent}
+  { path: 'task-details', component: TaskDetailsComponent},
+  { path: 'use-cases', component: UseCaseComponent},
+  { path: 'use-case-details', component: UseCaseDetailsComponent}
 ];
 
 @NgModule({

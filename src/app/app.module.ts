@@ -16,12 +16,15 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { RoleComponent } from './role/role.component';
 import { TaskComponent } from './task/task.component';
+import { UseCaseComponent } from './use-case/use-case.component';
+import { UseCaseDetailsComponent } from './use-case-details/use-case-details.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AccordionModule } from 'primeng/accordion';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 import { CarouselModule } from 'primeng/carousel';
 import { MenubarModule } from 'primeng/menubar';
 import { PanelModule } from 'primeng/panel';
@@ -47,6 +50,8 @@ import { FooterComponent } from './footer/footer.component';
     SidenavComponent,
     SpecificationComponent,
     TaskComponent,
+    UseCaseComponent,
+    UseCaseDetailsComponent,
     FooterComponent,
   ],
   imports: [
@@ -59,6 +64,7 @@ import { FooterComponent } from './footer/footer.component';
     AccordionModule,
     BreadcrumbModule,
     ButtonModule,
+    CardModule,
     CarouselModule,
     MenubarModule,    
     PanelModule,

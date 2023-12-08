@@ -1,12 +1,12 @@
 <div class="text-center heading">
   <h2>Research Object Crate (RO-Crate)</h2>
-    <p>
-      RO-Crate is a community effort to establish a lightweight approach
-      to packaging research data with their metadata.
-    </p>
+  <p>
+    RO-Crate is a community effort to establish a lightweight approach
+    to packaging research data with their metadata.
+  </p>
 </div>
 <div class="featured-content">
-  <div class="section-header">Explore RO Crate in Use</div>
+  <div class="section-header">Explore RO-Crate in Use</div>
   <div>
     <p-carousel [value]="useCases" [numVisible]="4" [numScroll]="3" [circular]="true"
       [responsiveOptions]="responsiveOptions" class="pr-5 pl-5">
@@ -14,13 +14,16 @@
         <!-- CAROUSEL ITEM -->
         <div class="carousel-item border-1 surface-border border-round m-2 shadow-2 py-5 px-3">
           <!-- TOP HALF -->
-          <div class="carousel-image-container">
-            <img src="/assets/images/{{ useCase.Image }}" [alt]="useCase.Name" class="carousel-image" />
-          </div>
+            <div class="carousel-image-container">
+              <a routerLink="/use-case-details" [queryParams]="{ useCase: useCase.Name }">
+                <img src="/assets/images/{{ useCase.Image }}" [alt]="useCase.Name" class="carousel-image" />
+              </a>
+            </div>          
           <!-- BOTTOM HALF -->
           <div class="carousel-content-container">
             <div class="text-center">
-              <h4 class="mb-1">{{ useCase.Name }}</h4><br />
+              <h4 class="mb-1">{{ useCase.Name }}</h4>
+              <p class="text-left">{{ useCase.Description }}</p>
             </div>
             <div class="text-center">
               <p-tag class="mr-2 stacked-tag" *ngFor="let tag of useCase.Tags">
@@ -32,5 +35,55 @@
       </ng-template>
     </p-carousel>
   </div>
-
+</div>
+<div class="dtr">
+  <div class="section-header">Explore RO-Crate by</div>
+  <div class="flex flex-row flex-wrap justify-content-center text-center section-content">
+    <div class="feature-grid">
+      <p-card>
+        <fa-icon [icon]="faFlask" class="fa fa-3x"></fa-icon>
+        <h3>Domain</h3>
+        <div style="height: 75px;width: 300px;">
+          <p>
+            Learn about data management tasks that affect your domain or
+            research community, and the solutions adopted to address them.
+          </p>
+        </div>
+        <ng-template pTemplate="footer">
+          <button pButton pRipple label="More" class="more-button" routerLink="/domain"></button>
+        </ng-template>
+      </p-card>
+    </div>
+    <div class="feature-grid">
+      <p-card>
+        <fa-icon [icon]="faPencil" class="fa fa-3x"></fa-icon>
+        <h3>Task</h3>
+        <div style="height: 75px;width: 300px;">
+          <p>
+            Find guidelines and solutions for tackling common data
+            management tasks.<br />
+          </p>
+        </div>
+        <ng-template pTemplate="footer">
+          <button pButton pRipple label="More" class="more-button" routerLink="/task"></button>
+        </ng-template>
+      </p-card>
+    </div>
+    <div class="feature-grid">
+      <p-card>
+        <fa-icon [icon]="faUser" class="fa fa-3x"></fa-icon>
+        <h3>Role</h3>
+        <div style="height: 75px;width: 300px;">
+          <p>
+            Identify your role in research data management, find data
+            management resources relevant for you, and information to help
+            you progress in your career path.
+          </p>
+        </div>
+        <ng-template pTemplate="footer">
+          <button pButton pRipple label="More" class="more-button" routerLink="/role"></button>
+        </ng-template>
+      </p-card>
+    </div>
+  </div>
 </div>
