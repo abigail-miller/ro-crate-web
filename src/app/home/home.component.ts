@@ -25,17 +25,17 @@ export class HomeComponent implements OnInit {
 
   responsiveOptions: any[]  = [
     {
-        breakpoint: '1350px',
+        breakpoint: '1800px',
         numVisible: 3,
         numScroll: 1
     },
     {
-        breakpoint: '1050px',
+        breakpoint: '1400px',
         numVisible: 2,
         numScroll: 1
     },
     {
-        breakpoint: '767px',
+        breakpoint: '900px',
         numVisible: 1,
         numScroll: 1
     }

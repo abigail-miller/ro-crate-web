@@ -1,7 +1,7 @@
 [
   {
     "Name": "Life Monitor",
-    "Description": "Life Monitor is a testing and monitoring service for computational workflows being developed as part of the EOSC-Life project. It aims to facilitate the execution, monitoring and sharing of workflow tests over time, allowing to detect deviations from expected workflow operation and provide useful feedback to the workflow authors for maintaining and improving their work.",
+    "Description": "Life Monitor is a testing and monitoring service for computational workflows being developed as part of the EOSC-Life project. It aims to facilitate the execution, monitoring and sharing of workflow tests over time, allowing to detect deviations from expected workflow operation and provide useful feedback to the workflow authors.",
     "Source": "life-monitor.md",
     "Image": "life_monitor.png",
     "Tags": ["Biomedical Science", "Medicine", "Conduct Research"]  },
@@ -25,7 +25,7 @@
     "Tags": ["Omics", "Informatics", "Software Development"]  },
   {
     "Name": "Language Data Commons of Australia (LDaCA)",
-    "Description": "LDaCA uses RO-Crate as an interchange and archive format for language data, and is providing data discovery portals and API access to data using RO-Crate-centric APIs.]",
+    "Description": "LDaCA uses RO-Crate as an interchange and archive format for language data, and is providing data discovery portals and API access to data using RO-Crate-centric APIs.",
     "Source": "ldaca.md",
     "Image": "ldaca.png",
     "Tags": ["Language and Text Analytics", "Data Curation", "Data Steward", "Managerial"]  

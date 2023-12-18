@@ -1,38 +1,38 @@
 [
   {
     "Name": "Biomedical Science",
-    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Description": "Topic concerning biological science that is (typically) performed in the context of medicine.",
     "Icon": "fa-flask-vial",
-    "Background": "Biomedical Science background"
+    "Background": "Topic concerning biological science that is (typically) performed in the context of medicine."
   },
   {
     "Name": "Chemistry",
-    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Description": "The composition and properties of matter, reactions, and the use of reactions to create new substances.",
     "Icon": "fa-flask",
-    "Background": "Chemistry background"
+    "Background": "The composition and properties of matter, reactions, and the use of reactions to create new substances."
   },
   {
     "Name": "Informatics",
-    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Description": "The study and practice of information processing and use of computer information systems.",
     "Icon": "fa-lightbulb",
-    "Background": "Informatics background"
+    "Background": "The study and practice of information processing and use of computer information systems."
   },
   {
     "Name": "Medicine",
-    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Description": "Research in support of healing by diagnosis, treatment, and prevention of disease.",
     "Icon": "fa-stethoscope",
-    "Background": "Medicine background"
+    "Background": "Research in support of healing by diagnosis, treatment, and prevention of disease."
   },
   {
     "Name": "Omics",
-    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Description": "The collective characterisation and quantification of pools of biological molecules that translate into the structure, function, and dynamics of an organism or organisms.",
     "Icon": "fa-dna",
-    "Background": "Omics background"
+    "Background": "The collective characterisation and quantification of pools of biological molecules that translate into the structure, function, and dynamics of an organism or organisms."
   },
   {
     "Name": "Language and Text Analytics",
-    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt",
+    "Description": "The scientific literature, language processing, reference information, and documentation.",
     "Icon": "fa-book",
-    "Background": "Language and Text Analytics background"
+    "Background": "The scientific literature, language processing, reference information, and documentation."
   }
 ]

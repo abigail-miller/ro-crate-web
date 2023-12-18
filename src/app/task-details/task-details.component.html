@@ -18,7 +18,7 @@
       <p-panel [toggleable]="true">
         <ng-template pTemplate="header"> <span class="title">Use Cases</span></ng-template>
         <div *ngFor="let case of matchingUseCases">
-          <a href="{{ case.URL }}" target="_blank">
+          <a routerLink="/use-case-details" [queryParams]="{ useCase: case.Name }">
             <h4>{{ case.Name }}</h4>
           </a>
           <p>{{ case.Description }}</p>
