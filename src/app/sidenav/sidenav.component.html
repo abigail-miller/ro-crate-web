@@ -1,29 +1,24 @@
 <div class="sidenav">
-  <div class="sidenav-header">Explore RO Crate</div>
+  <div class="sidenav-header">Explore RO-Crate</div>
   <p-accordion>
-    <p-accordionTab header="Your Domain">
+    <p-accordionTab header="Your Domain" [selected]="domainOpen">
       <div *ngFor="let domain of domains">
         <a [routerLink]="['/domain-details']" [queryParams]="{ category: domain.Name }">{{ domain.Name }}</a><hr/>
       </div>      
     </p-accordionTab>
-    <p-accordionTab header="Your Task">
+    <p-accordionTab header="Your Task" [selected]="taskOpen">
       <div *ngFor="let task of tasks">
         <a [routerLink]="['/task-details']" [queryParams]="{ category: task.Name }">{{ task.Name }}</a><hr/>
       </div>
     </p-accordionTab>
-    <p-accordionTab header="Your Role">
+    <p-accordionTab header="Your Role" [selected]="roleOpen">
       <div *ngFor="let role of roles">
         <a [routerLink]="['/role-details']" [queryParams]="{ category: role.Name }">{{ role.Name }}</a><hr/>
       </div>
     </p-accordionTab>
-    <p-accordionTab header="All Tools">
-      <div *ngFor="let tool of tools">
-        {{ tool.Name }}<hr/>
-      </div>
-    </p-accordionTab>
-    <p-accordionTab header="All Training">
-      <div *ngFor="let tutorial of tutorials">
-        {{ tutorial.Name }}<hr/>
+    <p-accordionTab header="Use Cases" [selected]="useCaseOpen">
+      <div *ngFor="let useCase of useCases">
+        <a [routerLink]="['/use-case-details']" [queryParams]="{ useCase: useCase.Name }">{{ useCase.Name }}<hr/></a>
       </div>
     </p-accordionTab>
   </p-accordion>

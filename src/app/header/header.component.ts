@@ -11,11 +11,12 @@ export class HeaderComponent implements OnInit {
   
   ngOnInit() {
     this.items = [
-      { label: 'Home', routerLink: 'home'}, 
-      { label: 'Background', routerLink: 'background'}, 
-      { label: 'Community', routerLink: 'community'},
-      { label: 'Specification', routerLink: 'specification'},
-      { label: 'Contact', routerLink: 'contact'} 
+      { label: 'Home', routerLink: '/home'}, 
+      { label: 'Background', routerLink: '/background'},
+      { label: 'Use Cases', routerLink: '/use-cases'}, 
+      { label: 'Community', routerLink: '/community'},
+      { label: 'Specification', routerLink: '/specification'},
+      { label: 'Contact', routerLink: '/contact'} 
     ];
   }
 }

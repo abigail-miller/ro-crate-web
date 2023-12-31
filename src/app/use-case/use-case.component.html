@@ -3,8 +3,24 @@
   <div class="col-2"><app-sidenav></app-sidenav></div>
   <div class="col-10">
     <div style="padding-top: 40px">
-      <h2>Use Cases</h2>
-      <hr class="mb-3"/>
+      <h2>RO-Crate in Use</h2>
+      <hr class="mb-3" />
+    </div>
+    <div *ngFor="let useCase of useCases" class="mb-4">
+      <p-fieldset>
+        <ng-template pTemplate="header">
+          <a [routerLink]="['/use-case-details']" [queryParams]="{ useCase: useCase.Name }">{{ useCase.Name }}</a>
+        </ng-template>
+        <div class="mb-2">
+          {{useCase.Description }}
+        </div>
+        <div>
+          <p-tag class="mr-2 stacked-tag" *ngFor="let tag of useCase.Tags">
+            <a class="tag-link" [routerLink]="getTagRoute(tag)" [queryParams]="{ category: tag }">{{ tag }}</a>
+          </p-tag>
+        </div>        
+      </p-fieldset>
     </div>
     <div style="margin-bottom:200px;"></div>
+  </div>
 </div>

@@ -6,7 +6,7 @@
   </p>
 </div>
 <div class="featured-content">
-  <div class="section-header">Explore RO-Crate in Use</div>
+  <div class="section-header"><a routerLink="/use-cases">Explore RO-Crate in Use</a></div>
   <div>
     <p-carousel [value]="useCases" [numVisible]="4" [numScroll]="3" [circular]="true"
       [responsiveOptions]="responsiveOptions" class="pr-5 pl-5">
@@ -23,7 +23,7 @@
           <div class="carousel-content-container">
             <div class="text-center">
               <h4 class="mb-1">{{ useCase.Name }}</h4>
-              <p class="text-left">{{ useCase.Description }}</p>
+              <p class="text-left carousel-detail-text">{{ useCase.Description }}</p>
             </div>
             <div class="text-center">
               <p-tag class="mr-2 stacked-tag" *ngFor="let tag of useCase.Tags">

@@ -15,6 +15,9 @@ export class UseCaseDetailsComponent implements OnInit {
   useCase: any;
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router) {
+    this.router.routeReuseStrategy.shouldReuseRoute = function(){
+      return false;
+    }
     this.activatedRoute.queryParamMap.subscribe((params) => {
       this.useCaseName = params.get('useCase') || '';
     });

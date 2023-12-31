@@ -38,13 +38,13 @@
   {
     "Name": "Repository Manager",
     "Description": "Besdies managing a repository and associated services, systems and support, a repository manager will promote the discoverability, visibility and accessibility of the repository content, and ensure they are accurate, up-to-date and comply with institutional/community standards.",
-    "Icon": "fa-paperclip",
+    "Icon": "fa-database",
     "Background": "Managerial background"
   },
   {
     "Name": "Information Architect",
     "Description": "An information architect is responsible for designing and possibly implementing new infrastructure and information solutions that fit with existing infrastructure and initiatives.",
-    "Icon": "fa-paperclip",
+    "Icon": "fa-file-contract",
     "Background": "Managerial background"
   }
 ]

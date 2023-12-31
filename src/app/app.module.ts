@@ -8,6 +8,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BackgroundComponent } from './background/background.component';
+import { CommunityComponent } from './community/community.component';
+import { ContactComponent } from './contact/contact.component';
 import { DomainDetailsComponent } from './domain-details/domain-details.component';
 import { RoleDetailsComponent } from './role-details/role-details.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -29,6 +31,7 @@ import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { CarouselModule } from 'primeng/carousel';
+import { FieldsetModule } from 'primeng/fieldset';
 import { MenubarModule } from 'primeng/menubar';
 import { PanelModule } from 'primeng/panel';
 import { PanelMenuModule } from 'primeng/panelmenu';
@@ -43,6 +46,8 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     AppComponent,
     BackgroundComponent,
+    CommunityComponent,
+    ContactComponent,
     DomainDetailsComponent,
     RoleDetailsComponent,
     TaskDetailsComponent,
@@ -70,6 +75,7 @@ import { FooterComponent } from './footer/footer.component';
     ButtonModule,
     CardModule,
     CarouselModule,
+    FieldsetModule,
     MenubarModule,    
     PanelModule,
     PanelMenuModule,

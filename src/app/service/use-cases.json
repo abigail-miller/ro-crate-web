@@ -2,30 +2,35 @@
   {
     "Name": "Life Monitor",
     "Description": "Life Monitor is a testing and monitoring service for computational workflows being developed as part of the EOSC-Life project. It aims to facilitate the execution, monitoring and sharing of workflow tests over time, allowing to detect deviations from expected workflow operation and provide useful feedback to the workflow authors.",
+    "URL": "",
     "Source": "life-monitor.md",
     "Image": "life_monitor.png",
     "Tags": ["Biomedical Science", "Medicine", "Conduct Research"]  },
   {
     "Name": "Workflow Execution Service (WfExS)",
     "Description": "WfExS-backend is a high-level workflow execution command line program that consumes and creates RO-Crates, focusing on the interconnection of content-sensitive research infrastructures for handling sensitive human data analysis scenarios.",
+    "URL": "",
     "Source": "wfexs.md",
     "Image": "wfexs.svg",
     "Tags": ["Informatics", "Software Development",  "Sofware Developer", "Data Analyst"]  },
   {
     "Name": "Arkisto",
     "Description": "Arkisto uses RO-Crate for packaging data objects in the 3 uses cases described below, Modern PARADISEC, UTS Research Data Repository and UTS Cultural Datasets. As part of these use-cases they have been developing or enhancing their tooling to facilitate their use of RO-Crate",
+    "URL": "",
     "Source": "arkisto.md",
     "Image": "arkisto.png",
     "Tags": ["Language and Text Analytics", "Data Curation", "Data Steward"]  },
   {
     "Name": "WorkflowHub",
     "Description": "WorkflowHub imports and exports Workflow RO-Crates, using it as an exchange format. They are a specialization of RO-Crate for packaging an executable workflow with all necessary documentation. It is aligned with, and intends to strictly extend, the more general Bioschemas ComputationalWorkflow profile.",
+    "URL": "",
     "Source": "workflow-hub.md",
     "Image": "workflow_hub.svg",
     "Tags": ["Omics", "Informatics", "Software Development"]  },
   {
     "Name": "Language Data Commons of Australia (LDaCA)",
     "Description": "LDaCA uses RO-Crate as an interchange and archive format for language data, and is providing data discovery portals and API access to data using RO-Crate-centric APIs.",
+    "URL": "",
     "Source": "ldaca.md",
     "Image": "ldaca.png",
     "Tags": ["Language and Text Analytics", "Data Curation", "Data Steward", "Managerial"]  
@@ -33,6 +38,7 @@
   {
     "Name": "ROHub",
     "Description": "ROHub is a solution for the storage, lifecycle management and preservation of scientific work and operational processes via research objects. It makes these reSources available to others, allows to publish and release them through a DOI, and allows to discover and reuse pre-existing scientific knowledge.",
+    "URL": "",
     "Source": "ro-hub.md",
     "Image": "ro_hub.svg",
     "Tags": ["Manging Research Data", "Data Handling", "Conduct Research", "Compliance Officer"]
@@ -40,7 +46,16 @@
   {
     "Name": "Survey Ontology",
     "Description": "The Survey Ontology is an open vocabulary that allows representing, annotating and sharing a representation of the survey structure and the gathered responses.",
+    "URL": "",
     "Source": "survey-ontology.md",
+    "Image": "",
+    "Tags": ["Manging Research Data", "Data Handling", "Conduct Research", "Compliance Officer"]
+  },
+  {
+    "Name": "Data PLANT",
+    "Description": "DataPLANT’s mission is to provide a sustainable and well annotated data management platform for plant sciences.",
+    "URL": "https://nfdi4plants.org/content/learn-more/annotated-research-context.html",
+    "Source": "data-plant.md",
     "Image": "",
     "Tags": ["Manging Research Data", "Data Handling", "Conduct Research", "Compliance Officer"]
   }
