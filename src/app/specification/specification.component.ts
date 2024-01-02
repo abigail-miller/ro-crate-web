@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Component({
-  selector: 'app-background',
+  selector: 'app-specification',
   templateUrl: './specification.component.html'
 })
 export class SpecificationComponent implements OnInit {

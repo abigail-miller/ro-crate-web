@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Component({
-  selector: 'app-background',
+  selector: 'app-community',
+  styleUrls: ['./community.component.scss'],  
   templateUrl: './community.component.html'
 })
 export class CommunityComponent implements OnInit {

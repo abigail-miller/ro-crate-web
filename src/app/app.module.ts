@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BackgroundComponent } from './background/background.component';
 import { CommunityComponent } from './community/community.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactComponent } from './community/contact.component';
 import { DomainDetailsComponent } from './domain-details/domain-details.component';
 import { RoleDetailsComponent } from './role-details/role-details.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -18,8 +18,11 @@ import { TaskDetailsComponent } from './task-details/task-details.component';
 import { DomainComponent } from './domain/domain.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { OutreachComponent } from './community/outreach.component';
+import { PublicationsComponent } from './community/publications.component';
 import { RoleComponent } from './role/role.component';
 import { TaskComponent } from './task/task.component';
+import { TeamComponent } from './community/team.component';
 import { UseCaseComponent } from './use-case/use-case.component';
 import { UseCaseDetailsComponent } from './use-case-details/use-case-details.component';
 
@@ -54,10 +57,13 @@ import { FooterComponent } from './footer/footer.component';
     DomainComponent,
     HeaderComponent,
     HomeComponent,
+    OutreachComponent,
+    PublicationsComponent,
     RoleComponent,
     SidenavComponent,
     SpecificationComponent,
     TaskComponent,
+    TeamComponent,
     UseCaseComponent,
     UseCaseDetailsComponent,
     FooterComponent,

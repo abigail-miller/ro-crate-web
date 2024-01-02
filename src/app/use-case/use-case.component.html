@@ -2,10 +2,12 @@
 <div class="grid">
   <div class="col-2"><app-sidenav></app-sidenav></div>
   <div class="col-10">
-    <div style="padding-top: 40px">
+    <div class="flex justify-content-between align-items-center">
       <h2>RO-Crate in Use</h2>
-      <hr class="mb-3" />
+      <button pButton type="button" class="p-button-outlined" routerLink="/submit-use-case">Submit a Use Case</button>
     </div>
+    <hr class="mb-3" />   
+    <div class="mb-4">The following applications use or expose RO-Crates to describe Data, Datasets and Workflows.</div>
     <div *ngFor="let useCase of useCases" class="mb-4">
       <p-fieldset>
         <ng-template pTemplate="header">

@@ -14,9 +14,15 @@ export class HeaderComponent implements OnInit {
       { label: 'Home', routerLink: '/home'}, 
       { label: 'Background', routerLink: '/background'},
       { label: 'Use Cases', routerLink: '/use-cases'}, 
-      { label: 'Community', routerLink: '/community'},
-      { label: 'Specification', routerLink: '/specification'},
-      { label: 'Contact', routerLink: '/contact'} 
+      { label: 'Community',
+        items: [
+          { label: 'Team', routerLink: '/community/team'},
+          { label: 'Outreach', routerLink: '/community/outreach'},
+          { label: 'Publications', routerLink: '/community/publications'},
+          { label: 'Contact', routerLink: '/community/contact'},
+        ]
+      },
+      { label: 'Specification', routerLink: '/specification'}
     ];
   }
 }
