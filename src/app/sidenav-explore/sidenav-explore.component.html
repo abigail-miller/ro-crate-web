@@ -17,6 +17,9 @@
       </div>
     </p-accordionTab>
     <p-accordionTab header="Use Cases" [selected]="useCaseOpen">
+      <div>
+        <a [routerLink]="['/use-cases']">All Use Cases<hr/></a>
+      </div>
       <div *ngFor="let useCase of useCases">
         <a [routerLink]="['/use-case-details']" [queryParams]="{ useCase: useCase.Name }">{{ useCase.Name }}<hr/></a>
       </div>

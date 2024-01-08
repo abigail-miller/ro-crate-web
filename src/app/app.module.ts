@@ -12,7 +12,8 @@ import { CommunityComponent } from './community/community.component';
 import { ContactComponent } from './community/contact.component';
 import { DomainDetailsComponent } from './domain-details/domain-details.component';
 import { RoleDetailsComponent } from './role-details/role-details.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
+import { SidenavExploreComponent } from './sidenav-explore/sidenav-explore.component';
+import { SidenavSpecComponent } from './sidenav-spec/sidenav-spec.component';
 import { SpecificationComponent } from './specification/specification.component';
 import { TaskDetailsComponent } from './task-details/task-details.component';
 import { DomainComponent } from './domain/domain.component';
@@ -60,7 +61,8 @@ import { FooterComponent } from './footer/footer.component';
     OutreachComponent,
     PublicationsComponent,
     RoleComponent,
-    SidenavComponent,
+    SidenavExploreComponent,
+    SidenavSpecComponent,
     SpecificationComponent,
     TaskComponent,
     TeamComponent,

@@ -1,0 +1,39 @@
+@import '../../assets/palette.scss';
+
+.sidenav {
+  max-width: 225px !important;
+  background-color: #F3F3F3;
+  padding: 10px;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.sidenav-header {
+  color: $primary-teal;
+  font-size: 16px;
+  font-weight: 700;
+  /* margin-left: 25px; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+::ng-deep a {
+  text-decoration : none !important;
+  display: block;
+}
+
+::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:focus {
+  box-shadow: none;
+  border: none;
+}
+
+::ng-deep .p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem $secondary-teal;
+}
+
+::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link {
+  color: $primary-teal;
+  font-family: "Source Sans 3", sans-serif;
+}

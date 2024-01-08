@@ -1,0 +1,22 @@
+<div class="sidenav">
+  <p-accordion>
+    <p-accordionTab header="Specification" [selected]="true">
+        <a [routerLink]="['/specification']" [queryParams]="{ route: 'index.html' }" class="mb-1">Introduction</a>
+        <a [routerLink]="['/specification']" [queryParams]="{ route: 'terminology.html' }" class="mb-1">Terminology</a>
+        <a [routerLink]="['/specification']" [queryParams]="{ route: 'structure.html' }" class="mb-1">RO-Crate Structure</a>
+        <a [routerLink]="['/specification']" [queryParams]="{ route: 'metadata.html' }" class="mb-1">RO-Crate Metadata</a>
+        <a [routerLink]="['/specification']" [queryParams]="{ route: 'root-data-entity.html' }" class="mb-1">Root Data Entity</a>
+        <a [routerLink]="['/specification']" [queryParams]="{ route: 'data-entities.html' }" class="mb-1">Data Entities</a>
+        <a [routerLink]="['/specification']" [queryParams]="{ route: 'contextual-entities.html' }" class="mb-1">Contextual Entities</a>        
+        <a [routerLink]="['/specification']" [queryParams]="{ route: 'provenance.html' }" class="mb-1">Provenance of Entities</a>     
+        <a [routerLink]="['/specification']" [queryParams]="{ route: 'workflows.html' }" class="mb-1">Workflows and scripts</a>
+    </p-accordionTab>
+    <p-accordionTab header="Appendix" [selected]="false">
+      <a [routerLink]="['/specification']" [queryParams]="{ route: 'appendix/changelog.html' }" class="mb-1">Changelog</a>      
+      <a [routerLink]="['/specification']" [queryParams]="{ route: 'appendix/relative-uris.html' }" class="mb-1">Handling relative URI references</a>
+      <a [routerLink]="['/specification']" [queryParams]="{ route: 'appendix/implementation-notes.html' }" class="mb-1">Implementation notes</a>
+      <a [routerLink]="['/specification']" [queryParams]="{ route: 'appendix/jsonld.html' }" class="mb-1">RO-Crate JSON-LD</a>
+  </p-accordionTab>   
+  </p-accordion>
+</div>
+

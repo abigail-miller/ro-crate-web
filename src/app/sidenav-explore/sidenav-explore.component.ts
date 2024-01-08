@@ -9,11 +9,11 @@ import * as tutorialsData from '../service/tutorials.json';
 import * as useCasesData from '../service/use-cases.json';
 
 @Component({
-  selector: 'app-sidenav',
-  templateUrl: './sidenav.component.html',
-  styleUrls: ['./sidenav.component.scss']
+  selector: 'app-sidenav-explore',
+  templateUrl: './sidenav-explore.component.html',
+  styleUrls: ['./sidenav-explore.component.scss']
 })
-export class SidenavComponent implements OnInit {
+export class SidenavExploreComponent implements OnInit {
   items: MenuItem[] | undefined;
   domains = (domainsData as any).default;
   tasks = (tasksData as any).default;
